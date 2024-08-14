@@ -21,17 +21,18 @@ class Solution {
     }
 }
 
-public class RemoveDuplicateFromSortedArray {
-    public static void main(String[] args) {
+public class RemoveDuplicateFromSortedArray 
+{
+    public static void main(String[] args) 
+    {
         Solution solution = new Solution();
         List<Integer> numsList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter numbers separated by spaces: ");
         String input = scanner.nextLine();
         scanner.close();
-
-        for (String s : input.split(" ")) {
+        for (String s : input.split(" ")) 
+        {
             numsList.add(Integer.parseInt(s));
         }
 
@@ -40,7 +41,8 @@ public class RemoveDuplicateFromSortedArray {
         int k = solution.removeDuplicates(nums);
 
         System.out.print("Output: " + k + ", nums = [");
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k; i++) 
+        {
             System.out.print(nums[i]);
             if (i < k - 1) {
                 System.out.print(", ");
