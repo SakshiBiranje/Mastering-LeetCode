@@ -1,5 +1,6 @@
 class Solution:
     def removeDuplicates(self, nums):
+        
         if not nums:
             return 0
 
@@ -9,7 +10,6 @@ class Solution:
             if nums[i] != nums[k - 1]:
                 nums[k] = nums[i]
                 k += 1
-
         return k
 
 if __name__ == "__main__":
