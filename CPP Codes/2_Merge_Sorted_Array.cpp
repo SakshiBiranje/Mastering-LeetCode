@@ -22,33 +22,13 @@ void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 }
 
 int main() {
-    int nums1Size, nums2Size;
+
+    vector<int> nums1={1,2,3,0,0,0};
+    vector<int> nums2={2,4,6};
+
     
-    cout << "Enter the size of nums1: ";
-    cin >> nums1Size;
-    cout << "Enter the size of nums2: ";
-    cin >> nums2Size;
-    
-    vector<int> nums1(nums1Size);
-    vector<int> nums2(nums2Size);
-    
-    int m, n;
-    cout << "Enter the number of elements in nums1 (excluding zeroes): ";
-    cin >> m;
-    cout << "Enter the elements of nums1: ";
-    for (int i = 0; i < m; i++) {
-        cin >> nums1[i];
-    }
-    for (int i = m; i < nums1Size; i++) {
-        nums1[i] = 0;
-    }
-    
-    cout << "Enter the number of elements in nums2: ";
-    cin >> n;
-    cout << "Enter the elements of nums2: ";
-    for (int i = 0; i < n; i++) {
-        cin >> nums2[i];
-    }
+    int m=3;
+    int n=3;
     
     merge(nums1, m, nums2, n);
     
