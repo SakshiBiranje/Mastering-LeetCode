@@ -14,5 +14,6 @@ class Solution:
 
 if __name__ == "__main__":
     sol = Solution()
-    prices = [7, 1, 5, 3, 6, 4, 7, 8, 9] 
+    prices = [7, 2, 5, 3, 6, 4] 
+
     print("Max Profit:", sol.maxProfit(prices))
