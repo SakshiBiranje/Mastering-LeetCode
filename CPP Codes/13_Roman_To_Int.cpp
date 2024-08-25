@@ -4,8 +4,10 @@ using namespace std;
 
 class Solution {
 public:
-    int romanToInt(string s) {
-        unordered_map<char, int> nums{
+    int romanToInt(string s) 
+    {
+        unordered_map<char, int> nums
+        {
             {'I', 1},
             {'V', 5},
             {'X', 10},
@@ -15,7 +17,8 @@ public:
             {'M', 1000},
         };
         int ans = nums[s.back()];
-        for (int i = 0; i < s.size() - 1; ++i) {
+        for (int i = 0; i < s.size() - 1; ++i) 
+        {
             int sign = nums[s[i]] < nums[s[i + 1]] ? -1 : 1;
             ans += sign * nums[s[i]];
         }
@@ -23,7 +26,8 @@ public:
     }
 };
 
-int main() {
+int main() 
+{
     Solution solution;
     string s = "MCMXCIV";
     cout << "Roman to Integer: " << solution.romanToInt(s) << endl;
